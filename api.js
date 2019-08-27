@@ -33,7 +33,7 @@ api.get('/historico', function (req, res) {
   // histórico de plumas o de maniobras
   filters.metrics = parseInt(tipo)
     ? ['adef', 'aexe', 'mtv', 'pbp', 'ppel', 'tmay', 'vto']
-    : ['hta', 'anem', 'bpozo', 'llave', 'haparejo']
+    : ['hta', 'anem', 'bpozo', 'llave', 'haparejo', 'h2sBpozo','h2spi']
 
     // let url = `${config.historico_script}${req.query.equipo}?filters=${JSON.stringify(filters)}&resolution=${req.query.resolucion}`
 
